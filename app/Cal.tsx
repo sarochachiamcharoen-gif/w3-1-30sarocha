@@ -16,10 +16,10 @@ export default function Cal() {
 
   return (
     <View>
-      <Text>คำนวณพื้นที่สี่เหลี่ยมจัตุรัส</Text>
-      <Text>ด้าน: {side},พื้นที่ : {area}</Text>
+      <Text style={{fontSize:20,textAlign:'center',backgroundColor:'plum'}}>คำนวณพื้นที่สี่เหลี่ยมจัตุรัส</Text>
+      <Text style={{fontSize:20,textAlign:'center',backgroundColor:'plum'}}>ด้าน: {side},พื้นที่ : {area}</Text>
       <TextInput 
-        style={{borderWidth:1}}
+        style={{borderWidth:1,backgroundColor:'pink'}}
         placeholder='กรอกขนาดของด้าน'
         value={side.toString()}
         onChangeText={(e) => setSide(Number(e))}
